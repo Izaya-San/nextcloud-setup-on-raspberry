@@ -1,3 +1,12 @@
+# Table of content
+- [Table of content](#table-of-content)
+- [General notes](#general-notes)
+- [Quick permissions explanations](#quick-permissions-explanations)
+- [Users created](#users-created)
+- [Create users](#create-users)
+- [Restrict sudo permission](#restrict-sudo-permission)
+
+# General notes
 For a basic install, you can use your main user with the sudo permissions to do everything (here `usudo`), and it'll work. If you choose to do that, simply ignore this part en always use this user for the next tutorials when a user is specified.
 
 # Quick permissions explanations
