@@ -1,3 +1,12 @@
+# Table of content
+- [Table of content](#table-of-content)
+- [General notes](#general-notes)
+- [Quick permissions explanations](#quick-permissions-explanations)
+- [Users created](#users-created)
+- [Create users](#create-users)
+- [Restrict sudo permission](#restrict-sudo-permission)
+
+# General notes
 For a basic install, you can use your main user with the sudo permissions to do everything (here `usudo`), and it'll work. If you choose to do that, simply ignore this part en always use this user for the next tutorials when a user is specified.
 
 # Quick permissions explanations
@@ -11,7 +20,6 @@ I wanted to improve the permissions seggragtion by creating several users:
 - unextcloud: optional user I'll use for nextcloud directory creation, without `sudo` permission. I considered it a bit better to have it, but you can really jus use the usudo to do everything instead
 
 # Create users
-To run as usudo
 ```sh
 # If needed, change the current user password
 passwd
@@ -21,8 +29,9 @@ sudo adduser ussh
 sudo adduser unextcloud
 ```
 
+Starting from here we have multiple users on our system. If not said explicitly, all queries are runned as usudo as it's the main user you'll use for most of the installation.
+
 # Restrict sudo permission
-To run as usudo
 ```sh
 # As usudo, check the list of users with sudo permission, it should only returns the user usudo
 getent group sudo

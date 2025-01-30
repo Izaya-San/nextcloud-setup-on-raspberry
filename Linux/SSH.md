@@ -1,6 +1,17 @@
+# Table of content
+- [Table of content](#table-of-content)
+- [SSH setup](#ssh-setup)
+  - [Instal SSH](#instal-ssh)
+  - [Access your server from outside](#access-your-server-from-outside)
+- [Change SSH port and restrict access](#change-ssh-port-and-restrict-access)
+  - [Server setup](#server-setup)
+  - [Access your server from outside](#access-your-server-from-outside-1)
+- [Ease your SSH log in](#ease-your-ssh-log-in)
+  - [SSH authorized keys](#ssh-authorized-keys)
+  - [Client custom config](#client-custom-config)
+
 # SSH setup
 ## Instal SSH
-As usudo
 ```sh
 # Check there is not SSH server setup
 sudo systemctl status ssh
@@ -44,7 +55,6 @@ To improve the security, you can change the SSH port from 22 to any other number
 
 We'll also restrict SSH login to ussh only. Hence, to access the user with sudo powers you'll need to log in as ussh and then user the `su` command to switch to usudo. This further increase security.
 
-As usudo
 ```sh
 # Edit the ssh config
 sudo nano /etc/ssh/sshd_config

@@ -1,4 +1,14 @@
 # Nextcloud setup on Raspberry
+## Table of content
+- [Nextcloud setup on Raspberry](#nextcloud-setup-on-raspberry)
+  - [Table of content](#table-of-content)
+  - [Description](#description)
+  - [Disclamer](#disclamer)
+  - [Configuration](#configuration)
+  - [Setup](#setup)
+  - [Other documentations](#other-documentations)
+  - [Links](#links)
+
 ## Description
 This repository describes a step-by-step installation of Nextcloud on a Raspberry Pi and a RAID 5 with Ubuntu Server, Apache, PHP and MySQL. It also explains important concepts to understand the commands and covers everything from the physical installation of the OS on the Raspberry Pi, the linux users setup, the SSH certificat setup, a full RAID 5 setup for the data storage, the Apache configuration, etc. You'll also find explanations on how to back up your data, how to restore your nextcloud server from backups, how to upgrade your Nextcloud version, troubleshooting notes, etc.
 
